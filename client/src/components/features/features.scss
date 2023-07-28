@@ -1,0 +1,138 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  .navbar {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+    .sortContainer {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 18px;
+        // margin-bottom: 10px;
+      }
+      select {
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        padding: 5px;
+        &:focus {
+          outline: none;
+          border: 1px solid blue;
+          background: transparent;
+        }
+        option {
+          background: transparent;
+          color: #000;
+        }
+      }
+    }
+
+    form {
+      // border: 2px solid red;
+      width: 60%;
+      height: 30px;
+      position: relative;
+      display: flex;
+      gap: 5px;
+      // margin: 30px 0;
+      input {
+        flex: 8;
+        padding-left: 5px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        &:focus {
+          outline: none;
+          border: 1px solid blue;
+          border-radius: 2px;
+        }
+      }
+      button {
+        flex: 1;
+        //   background: rgb(0, 0, 0);
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // saerchTable
+  .searchTable {
+    width: 80%;
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+
+      thead {
+        tr {
+          &:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+          th {
+            text-align: left;
+            background-color: #f2f2f2;
+            padding: 8px 8px 8px 21px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          &:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+          td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+
+            button {
+              cursor: pointer;
+              background-color: #efefef;
+              border: none;
+              padding: 5px;
+              outline: 1px solid #ccc;
+              border-radius: 2px;
+              margin-right: 4px;
+              &:hover {
+                background-color: rgb(238, 233, 233);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .paginate-btn {
+    // border: 1px solid red;
+    margin-top: 30px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      background-color: #efefef;
+      border: none;
+      padding: 5px;
+      outline: 1px solid #ccc;
+      border-radius: 2px;
+      margin-right: 4px;
+      &:hover {
+        background-color: rgb(238, 233, 233);
+      }
+    }
+  }
+}
