@@ -4,7 +4,7 @@
 
 ###### To run the app :
 
-- clone to the folder
+- clone the repo
 - go the folder/client
 - npm install
 - npm run dev // this will start app in developement
