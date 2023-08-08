@@ -67,6 +67,10 @@
   // saerchTable
   .searchTable {
     width: 80%;
+    h3 {
+      text-align: center;
+      color: red;
+    }
     table {
       border-collapse: collapse;
       width: 100%;
@@ -76,11 +80,12 @@
 
       thead {
         tr {
+          text-align: center;
           &:nth-child(even) {
             background-color: #f2f2f2;
           }
           th {
-            text-align: left;
+            // text-align: left;
             background-color: #f2f2f2;
             padding: 8px 8px 8px 21px;
           }

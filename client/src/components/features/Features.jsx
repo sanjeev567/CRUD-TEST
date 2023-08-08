@@ -14,7 +14,7 @@ const features = () => {
   const [totalPages, setTotalPages] = useState(1);
 
   const [update, setUpdate] = useState("");
-
+  const [error, setError] = useState(false);
   //   useEffect(() => {
   //     fetchData();
   //   }, []);
@@ -125,6 +125,10 @@ const features = () => {
       }
     } catch (err) {
       console.log("Server error " + err);
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
     }
   };
 
@@ -164,6 +168,7 @@ const features = () => {
         </form>
       </div>
       <div className="searchTable">
+        {error && <h3>Only admin or self user can delete their data !</h3>}
         <table>
           <thead>
             <tr>
