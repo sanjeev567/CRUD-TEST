@@ -9,7 +9,7 @@ import {
 import Register from "./components/register/Registration";
 import Login from "./components/login/Login";
 import Features from "./components/features/Features";
-
+import FileUpload from "./components/fileUpload/FileUpload";
 const App = () => {
   const [redirect, setRedirect] = useState(false);
 
@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <Router>
+      {/* <Router>
         <Routes>
           <Route
             path="/"
@@ -29,7 +29,8 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login onLogin={handleRedirect} />} />
         </Routes>
-      </Router>
+      </Router> */}
+      <FileUpload />
     </div>
   );
 };
